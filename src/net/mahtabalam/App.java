@@ -6,7 +6,9 @@ public class App {
         int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         System.out.println("Maximum contiguous subarray sum : "+maxSubArray(arr)); // 6
 	}
-
+	
+	// Runtime Complexity : O(n)
+	// Space Complexity   : O(1)
 	public static int maxSubArray(int[] nums) {
 		int currentMax = 0;
 		int globalMax = 0;
@@ -23,5 +25,4 @@ public class App {
 		}
 		return globalMax;
 	}
-
 }
